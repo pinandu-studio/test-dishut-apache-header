@@ -14,7 +14,7 @@ Aktifkan CGIPassAuth dengan menambahkan kode berikut pada virtualhost:
 CGIPassAuth On
 ```
 
-Untuk detailnya ada pada file `config/apache/httpd.conf` baris ke 271.
+Untuk detailnya ada pada file [`config/apache/httpd.conf` baris ke 271](https://github.com/pinandu-studio/test-dishut-apache-header/blob/48f76c3aeba4d78bab4eeeb211ded6890e0e40ee/config/apache/httpd.conf#L271).
 
 ### Opsi 2: Menggunakan SetEnvIf
 
@@ -24,7 +24,7 @@ Gunakan SetEnvIf dengan menambahkan kode berikut pada virtualhost:
 SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 ```
 
-Untuk detailnya ada pada file `config/apache/httpd.conf` baris ke 274.
+Untuk detailnya ada pada file [`config/apache/httpd.conf` baris ke 274](https://github.com/pinandu-studio/test-dishut-apache-header/blob/48f76c3aeba4d78bab4eeeb211ded6890e0e40ee/config/apache/httpd.conf#L274).
 
 ## Menjalankan
 
