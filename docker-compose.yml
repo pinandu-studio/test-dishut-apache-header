@@ -1,0 +1,14 @@
+services:
+  php:
+    image: php:7.4.33-fpm
+    volumes:
+      - ./www:/var/www/html/
+  apache:
+    image: httpd:2.4.63
+    ports:
+      - 15400:80
+    volumes:
+      - ./www:/var/www/html/
+      - ./config/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    depends_on:
+      - php
